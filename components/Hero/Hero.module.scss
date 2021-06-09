@@ -1,0 +1,49 @@
+.backgroundHero {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      #020414 5%,
+      transparent 50%,
+      rgb(2 4 20 / 60%) 70%,
+      rgb(2 4 20 / 95%) 90%,
+      #020414 100%
+    ),
+    url('/images/godzillavskong.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, top;
+  width: 100%;
+  height: 70vh;
+  .textHero {
+    color: #fff;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    bottom: 100px;
+    p {
+      padding: 0 0.5rem;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 300;
+      color: white;
+    }
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 700;
+      color: #ff002e;
+    }
+    .navLink {
+      text-align: center;
+      font-size: 18px;
+      .navLinkHero {
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+    }
+    .starHero {
+      text-align: center;
+    }
+  }
+}
