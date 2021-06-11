@@ -22,10 +22,12 @@
     }
   }
   .leftSideHeader {
-    color: #fff;
     .navLink {
       display: inline-block;
       margin-right: 0.5rem;
+      a {
+        color: #fff;
+      }
     }
   }
 }

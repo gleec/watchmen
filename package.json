@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "next": "10.2.3",
+    "next-redux-wrapper": "^7.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "react-query": "^3.16.1",
-    "sass": "^1.34.1"
+    "sass": "^1.34.1",
+    "swiper": "^6.7.0"
   },
   "devDependencies": {
     "cypress": "^7.5.0"

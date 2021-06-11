@@ -1,5 +1,4 @@
 @import './reset';
-@import './Home.scss';
 
 html,
 body {
@@ -7,42 +6,5 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-footer {
-  background-color: #2f2f2f;
-
-  &.xy {
-    padding: 2rem;
-
-    p {
-      margin: 2rem;
-      color: #2f2f2f;
-
-      :first-child {
-      }
-    }
-  }
-}
-
-footer.xy {
-  background-color: #2f2f2f;
-}
-
-footer div {
-  padding: 2rem;
-}
-
-footer div p {
-  margin: 2rem;
-  color: #2f2f2f;
+  background-color: #020414;
 }
