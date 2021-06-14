@@ -2,14 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './MovieCard.module.scss';
 
-const DEFAULT_IMAGE =
-  'https://www.themoviedb.org/t/p/w220_and_h330_face/cEmpGjZZu3JSlkKm8NUuCzrUscR.jpg';
+const MovieCard = ({ title, src }) => {
+  const image = src
+    ? `${process.env.NEXT_PUBLIC_IMAGES_URL}/original${src}`
+    : '/images/poster.jpg';
 
-const MovieCard = ({ title, src = DEFAULT_IMAGE, width, height }) => {
   return (
     <>
       <div className={styles.movieCard}>
-        <Image src={src} alt="Riverdale" width={width} height={height} />
+        <Image src={image} alt={title} width={220} height={330} />
         <p> {title} </p>
       </div>
     </>

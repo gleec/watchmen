@@ -7,10 +7,8 @@ export default function Home() {
     <div>
       <Header />
       <Hero />
-      <ListOfMovieCards title="Title Section 1" />
-      <ListOfMovieCards title="Title Section 2" />
-      <ListOfMovieCards title="Title Section 3" />
-      <ListOfMovieCards title="Title Section 4" />
+      <ListOfMovieCards title="Now Playing" endpoint="/movie/now_playing" />
+      <ListOfMovieCards title="Popular" endpoint="/movie/popular" />
     </div>
   );
 }

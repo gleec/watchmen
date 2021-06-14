@@ -3,6 +3,6 @@ module.exports = {
     webpack5: true
   },
   images: {
-    domains: ['themoviedb.org']
+    domains: ['image.tmdb.org']
   }
 };
