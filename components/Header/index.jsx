@@ -2,6 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Header.module.scss';
 import Link from 'next/link';
+import { MdSearch, MdPerson } from 'react-icons/md';
+
+const SIZE = '32px';
+const COLOR = '#ff002e';
 
 const Header = () => {
   return (
@@ -23,17 +27,16 @@ const Header = () => {
         <ul>
           <li className={styles.navLink}>
             <Link href="/search">
-              <a>Search</a>
+              <a>
+                <MdSearch size={SIZE} color={COLOR} />
+              </a>
             </Link>
           </li>
           <li className={styles.navLink}>
             <Link href="/login">
-              <a>Login</a>
-            </Link>
-          </li>
-          <li className={styles.navLink}>
-            <Link href="/signup">
-              <a>Signup</a>
+              <a>
+                <MdPerson size={SIZE} color={COLOR} />
+              </a>
             </Link>
           </li>
         </ul>

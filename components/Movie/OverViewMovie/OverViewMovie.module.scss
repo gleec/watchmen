@@ -1,0 +1,18 @@
+.titleSection {
+  text-align: left;
+  padding: 0 1.5rem 1rem 1.5rem;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff002e;
+}
+.description {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  font-size: 18px;
+  color: #fff;
+  max-width: 100%;
+  text-align: left;
+
+  @media (min-width: 700px) {
+    max-width: 450px;
+  }
+}

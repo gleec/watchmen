@@ -1,6 +1,9 @@
 .movieCard {
   max-width: 220px;
-  margin: 5px;
+  .imageCard {
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
   p {
     color: #fff;
     text-align: center;
