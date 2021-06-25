@@ -5,12 +5,14 @@
   background-position: center, top;
   width: 100%;
   height: 90vh;
+
   .textHero {
     color: #fff;
     position: absolute;
     margin: auto;
     width: 100%;
     bottom: 100px;
+
     p {
       padding: 0 0.5rem;
       text-align: center;
@@ -18,6 +20,7 @@
       font-weight: 300;
       color: white;
     }
+
     h3 {
       text-align: center;
       text-transform: uppercase;
@@ -25,20 +28,24 @@
       font-weight: 700;
       color: #ff002e;
     }
+
     .navLink {
       text-align: center;
       font-size: 18px;
+
       .navLinkHero {
         display: inline-block;
         margin-right: 0.5rem;
+
         a {
           color: white;
         }
       }
     }
+
     .starHero {
-      width: 30px;
-      height: 23px;
+      width: 50px;
+      height: 25px;
       background-color: rgb(255 0 46 / 0.3);
       margin: auto;
       border-radius: 3px;

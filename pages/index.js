@@ -1,5 +1,5 @@
 import Hero from '../components/Movie/Hero';
-import Header from '../components/Header';
+import Layout from '@/components/layout';
 import ListOfMovieCards from '../components/Movie/ListOfMovieCards';
 import {
   getNowPlayingMovies,
@@ -11,17 +11,18 @@ import {
 export default function Home({ random }) {
   return (
     <div>
-      <Header />
-      <Hero
-        producer={random.production_companies[0].name}
-        movieName={random.original_title}
-        movieGenres={random.genres}
-        movieRatting={random.vote_average}
-        backdropPath={random.backdrop_path}
-      />
-      <ListOfMovieCards title="Now Playing" getter={getNowPlayingMovies} />
-      <ListOfMovieCards title="Popular" getter={getPopularMovies} />
-      <ListOfMovieCards title="Upcoming" getter={getUpcomingMovies} />
+      <Layout>
+        <Hero
+          producer={random.production_companies[0].name}
+          movieName={random.original_title}
+          movieGenres={random.genres}
+          movieRatting={random.vote_average}
+          backdropPath={random.backdrop_path}
+        />
+        <ListOfMovieCards title="Now Playing" getter={getNowPlayingMovies} />
+        <ListOfMovieCards title="Popular" getter={getPopularMovies} />
+        <ListOfMovieCards title="Upcoming" getter={getUpcomingMovies} />
+      </Layout>
     </div>
   );
 }

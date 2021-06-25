@@ -1,0 +1,36 @@
+.movieList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 185px;
+  padding: 0 1rem;
+  .movieItem {
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+    border-radius: 8px;
+    background-color: #ff002e80;
+    overflow: hidden;
+    .movieContent {
+      width: 100%;
+      padding: 1em;
+      font-size: 14px;
+      overflow: hidden;
+      .movieTitle {
+        font-size: 1.25em;
+        color: #fff;
+      }
+
+      .movieOverview {
+        display: -webkit-box;
+        margin-top: 1rem;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 1em;
+        color: #fff;
+      }
+    }
+  }
+}
