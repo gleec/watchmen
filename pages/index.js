@@ -29,7 +29,7 @@ export default function Home({ random }) {
 
 export async function getServerSideProps(context) {
   const random = await getRandomMovie();
-
+  console.log('random', random)
   return {
     props: {
       random

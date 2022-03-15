@@ -1,7 +1,6 @@
 import { movieApiInstance } from '@/lib/api/movieApi';
 
 export default async (req, res) => {
-  console.log(req.body);
   try {
     const response = await movieApiInstance.post(
       `/authentication/session/new`,
@@ -12,7 +11,6 @@ export default async (req, res) => {
         }
       }
     );
-    console.log(response.data);
     res.json(response.data.session_id);
   } catch (error) {
     console.error(error);

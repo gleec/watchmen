@@ -26,7 +26,7 @@ const Header = () => {
       createSession(request_token).then(session => {
         console.log(session);
       });
-      console.log(approved, request_token);
+     
     }
   }, [approved]);
 

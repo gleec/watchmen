@@ -8,8 +8,6 @@ import { getRecommendations } from '@/lib/api/services/getMovies';
 import Layout from '@/components/layout';
 
 const MovieDetail = ({ detail }) => {
-  console.log(detail);
-  //const [movieDetail, setMovieDetail] = useState(null);
   const getter = () => getRecommendations(detail.id);
 
   return (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MovieCard from '../MovieCard';
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from './ListofMovieCards.module.scss';
+import styles from './ListOfMovieCards.module.scss';
 
 SwiperCore.use([Navigation]);
 
